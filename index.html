@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>Bowling</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"> </script>
+    <script src="./Bowling.js"></script>
+</head>
+<body>
+    <a-scene id="scene">
+        <a-assets>
+            <a-asset-item id="pin" src="./assets/bowling_pin/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity bowling-ball></a-entity>
+
+
+        <a-camera id='camera' position="0 1 0"></a-camera>
+
+        <a-plane
+            id="ground"
+            position="0 0 0"
+            rotation="-90 0 0"
+            height="30"
+            width="5"
+            color="tan"
+            static-body
+            visible="true"
+      >
+        </a-entity>
+
+        
+        <a-box position="0 9.5 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="0.5 10 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="-0.5 10 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="1 10.5 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="0 10.5 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="-1 10.5 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="0.5 11 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="1.5 11 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="-0.5 11 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+
+        <a-box position="-1.5 11 0" color="red" depth="3" height="0.2" width="0.2" gltf-model="#pin" rotation="90 0 0" scale="4 4 4"></a-box>
+    </a-scene>
+</body>
+</html>
